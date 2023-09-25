@@ -1,7 +1,6 @@
 import os
 
-
-def renamer():
+def renamer(front,end,source,target):
         word_list=[]
         with open('your_file.txt', 'r') as file:
                 for line in file:
@@ -19,3 +18,5 @@ def renamer():
                 file.write(final_list_line_by_line)
 
         print("Final file has been modified and created successfully!")
+
+renamer()
