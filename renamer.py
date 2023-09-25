@@ -1,12 +1,13 @@
 import os
 
 def renamer(front,end,source,target):
+        #generate a list of the texts needs to be changed
         word_list=[]
         with open('your_file.txt', 'r') as file:
                 for line in file:
                         word = line.strip()  # Remove leading/trailing whitespace, if any
                         word_list.append(word)
-
+        #generate a list of modified texts
         final_list=[]
         for word in word_list:
                 final_list.append(word[57:])
