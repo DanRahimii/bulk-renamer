@@ -1,7 +1,9 @@
 import os
 
 def renamer(front,end,source,target):
-        #generate a list of the texts needs to be changed
+
+        
+        #generate a list of the texts that needs to be changed
         word_list=[]
         with open('your_file.txt', 'r') as file:
                 for line in file:
