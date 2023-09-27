@@ -17,7 +17,7 @@ def renamer(front,end,source,target):
                 for word in word_list:
                         final_list.append(word[int(front):-int(end)])
         else:
-                print("the texts file you provided was empty.")
+                print("the text file you provided was empty.")
                 return
         
         final_list_line_by_line= '\n'.join(final_list)
