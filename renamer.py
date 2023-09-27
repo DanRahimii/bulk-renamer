@@ -1,6 +1,6 @@
 import os
 
-def renamer(front,end,source,target):
+def renamer(front=0,end=0,source="file",target="final"):
         #generate a list of the texts needs to be changed
         word_list=[]
         try:
