@@ -13,8 +13,12 @@ def renamer(front,end,source,target):
                         
         #generate a list of modified texts
         final_list=[]
-        for word in word_list:
-                final_list.append(word[int(front):-int(end)])
+        if(len(word_list)>0):
+                for word in word_list:
+                        final_list.append(word[int(front):-int(end)])
+        else:
+                print("the texts file you provided was empty.")
+                return
         
         final_list_line_by_line= '\n'.join(final_list)
 
